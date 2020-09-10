@@ -27,7 +27,7 @@ class StatesListActivity : AppCompatActivity() {
             listView.setItemChecked(position, true)
         }
 
-        listView.setOnClickListener{l, _, position, _ ->
+        listView.setOnItemClickListener{l, _, position, _ ->
             val result = l.getItemAtPosition(position) as String
             val it = Intent()
 
